@@ -3,7 +3,7 @@ import Notiflix from 'notiflix';
 import SimpleLightbox from 'simplelightbox';
 // Дополнительный импорт стилей
 import 'simplelightbox/dist/simple-lightbox.min.css';
-//
+
 const searchQueryInput = document.querySelector('[name="searchQuery"]');
 const sabmitBtn = document.querySelector('[type="submit"]');
 const gallary = document.querySelector('.gallery');
@@ -100,7 +100,6 @@ function onLoadMore() {
         "We're sorry, but you've reached the end of search results."
       );
       loadMoreBtn.classList.add('is-hidden');
-      return;
     }
 
     creatingPhotoMarkup(response);
